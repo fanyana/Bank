@@ -1,0 +1,302 @@
+operable program or batch file.
+C:\Users\C731974\BankAccount\Bank>mvn clean
+Picked up JAVA_TOOL_OPTIONS: -agentlib:jvmhook
+Picked up _JAVA_OPTIONS: -Xrunjvmhook -Xbootclasspath/a:"C:\Program Files\HP\Unified Functional Testing\b
+in\java_shared\classes";"C:\Program Files\HP\Unified Functional Testing\bin\java_shared\classes\jasmine.j
+ar"
+[INFO] Scanning for projects...
+[INFO]
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder
+ with a thread count of 1
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bank 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Bank ---
+[INFO] Deleting C:\Users\C731974\BankAccount\Bank\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.568 s
+[INFO] Finished at: 2017-05-09T17:12:46+02:00
+[INFO] Final Memory: 4M/15M
+[INFO] ------------------------------------------------------------------------
+'cmd' is not recognized as an internal or external command,
+operable program or batch file.
+C:\Users\C731974\BankAccount\Bank>mvn clean package
+Picked up JAVA_TOOL_OPTIONS: -agentlib:jvmhook
+Picked up _JAVA_OPTIONS: -Xrunjvmhook -Xbootclasspath/a:"C:\Program Files\HP\Unified Functional Testing\b
+in\java_shared\classes";"C:\Program Files\HP\Unified Functional Testing\bin\java_shared\classes\jasmine.j
+ar"
+[INFO] Scanning for projects...
+[INFO]
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder
+ with a thread count of 1
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bank 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/org/hamcrest/hamcrest-core/
+1.3/hamcrest-core-1.3.jar
+Downloading: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/junit/junit/4.11/junit-4.11
+.jar
+Downloaded: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/org/hamcrest/hamcrest-core/1
+.3/hamcrest-core-1.3.jar (44 KB at 182.4 KB/sec)
+Downloaded: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/junit/junit/4.11/junit-4.11.
+jar (240 KB at 848.6 KB/sec)
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Bank ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Bank ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform de
+pendent!
+[INFO] skip non existing resourceDirectory C:\Users\C731974\BankAccount\Bank\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ Bank ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependen
+t!
+[INFO] Compiling 2 source files to C:\Users\C731974\BankAccount\Bank\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Bank ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform de
+pendent!
+[INFO] skip non existing resourceDirectory C:\Users\C731974\BankAccount\Bank\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ Bank ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependen
+t!
+[INFO] Compiling 1 source file to C:\Users\C731974\BankAccount\Bank\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Bank ---
+[INFO] Surefire report directory: C:\Users\C731974\BankAccount\Bank\target\surefire-reports
+Downloading: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/org/apache/maven/surefire/s
+urefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+Downloaded: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/org/apache/maven/surefire/su
+refire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 1.6 KB/sec)
+Downloading: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/org/apache/maven/surefire/s
+urefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+Downloaded: http://nexus.standardbank.co.za:8090/nexus/content/groups/public/org/apache/maven/surefire/su
+refire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 383.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.wipro.bank.assessment.AppTest
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.074 sec <<< FAILURE!
+testGetAccountDetailsByID1(com.wipro.bank.assessment.AppTest)  Time elapsed: 0.011 sec  <<< ERROR!
+java.lang.NullPointerException
+        at com.wipro.bank.assessment.AppTest.setUp(AppTest.java:18)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+
+        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165
+)
+        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testGetAccountDetailsByID2(com.wipro.bank.assessment.AppTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+        at com.wipro.bank.assessment.AppTest.setUp(AppTest.java:18)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+
+        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165
+)
+        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+getAccountDetailsByBalance1(com.wipro.bank.assessment.AppTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+        at com.wipro.bank.assessment.AppTest.setUp(AppTest.java:18)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+
+        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165
+)
+        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+getAccountDetailsByBalance2(com.wipro.bank.assessment.AppTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+        at com.wipro.bank.assessment.AppTest.setUp(AppTest.java:18)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+
+        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165
+)
+        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+getAccountDetailsByBalance3(com.wipro.bank.assessment.AppTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+        at com.wipro.bank.assessment.AppTest.setUp(AppTest.java:18)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+
+        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165
+)
+        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Picked up JAVA_TOOL_OPTIONS: -agentlib:jvmhook
+Picked up _JAVA_OPTIONS: -Xrunjvmhook -Xbootclasspath/a:"C:\Program Files\HP\Unified Functional Testing\b
+in\java_shared\classes";"C:\Program Files\HP\Unified Functional Testing\bin\java_shared\classes\jasmine.j
+ar"
+
+Results :
+
+Tests in error:
+  testGetAccountDetailsByID1(com.wipro.bank.assessment.AppTest)
+  testGetAccountDetailsByID2(com.wipro.bank.assessment.AppTest)
+  getAccountDetailsByBalance1(com.wipro.bank.assessment.AppTest)
+  getAccountDetailsByBalance2(com.wipro.bank.assessment.AppTest)
+  getAccountDetailsByBalance3(com.wipro.bank.assessment.AppTest)
+
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.239 s
+[INFO] Finished at: 2017-05-09T17:20:18+02:00
+[INFO] Final Memory: 13M/31M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test)
+on project Bank: There are test failures.
+[ERROR]
+[ERROR] Please refer to C:\Users\C731974\BankAccount\Bank\target\surefire-reports for the individual test
+ results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+'cmd' is not recognized as an internal or external command,
+operable program or batch file.
+C:\Users\C731974\BankAccount\Bank>
+
+
